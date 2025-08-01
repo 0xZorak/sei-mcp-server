@@ -15,7 +15,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "start": "bun run src/index.ts",
+    "start": "node --loader ts-node/esm src/index.ts",
     "build": "bun build src/index.ts --outdir build --target node",
     "build:http": "bun build src/server/http-server.ts --outdir build --target node --outfile http-server.js",
     "dev": "bun --watch src/index.ts",
@@ -34,7 +34,9 @@
     "@types/bun": "latest",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
-    "conventional-changelog-cli": "^5.0.0"
+    "conventional-changelog-cli": "^5.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   },
   "peerDependencies": {
     "typescript": "^5.8.2"
