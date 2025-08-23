@@ -4,7 +4,6 @@ import startServer from "./server.js";
 import express, { Request, Response } from "express";
 import cors from "cors";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
-import axios from "axios";
 
 // Environment variables - hardcoded values
 const PORT = 3001;
